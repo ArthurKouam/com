@@ -1,0 +1,91 @@
+
+#app{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+}
+h1{
+    text-align: center;
+    font-size: 35px;
+}
+#container{
+    width: 60vw;
+}
+#container p{
+    font-size: 20px;
+    text-align: center;
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 15px;
+}
+#masse{
+    grid-column: span 1;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    background-color: aqua;
+    color: rgb(26, 168, 229);
+}
+#des{
+    grid-column: span 3;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+#price{
+    grid-column: span 1;
+    display: grid;
+    background-color: white;
+    place-items: center;
+    color: rgb(26, 168, 229);
+    font-size: 55px;
+}
+button{
+    border: 0;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(26, 168, 229);;
+}
+#boutton{
+    display: flex;
+    justify-content: space-between;
+    width: 63VW;
+}
+#connexion{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#connexion input{
+    width: 50%;
+    height: 30px;
+    border-radius: 15px;
+}
+#third{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    gap: 20px;
+}
+textarea{
+    resize: none;
+}
+
+
+#finfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}

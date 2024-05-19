@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Achat vue js</title>
+</head>
+<body>
+
+    <div id="app">
+        <div id="container">
+            <h1 v-show="position == 0">Coffe plans</h1>
+            <first v-if="position == 0"></first>
+            <second v-if="position == 1"></second>
+            <third v-if="position == 2"></third>
+            <div id="four" v-if="position == 3">
+                <h1>Finalisez votre commande</h1>
+                <div id="finfo" >
+                    <span>
+                        <p>Nom: </p>
+                        <p>Adresse mail: </p>
+                        <p>choix: </p>
+                    </span>
+                    <span>
+                        <p>Prix: </p>
+                        <p>Adresse: </p>
+                        <p>Moyen de payment: </p>
+                    </span>
+                </div>
+            </div>
+            <div id="boutton">
+                <span><button v-show="position != 0" id="prev" @click="pos(-1)">PREV</button></span>
+                <span><button v-show="position != 3" id="next" @click="pos(1)">NEXT</button></span>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+    <script src="assets/first.js"></script>
+    <script src="assets/second.js"></script>
+    <script src="assets/third.js"></script>
+    <script>
+        const mountApp = app.mount("#app");
+    </script>
+    
+
+</body>
+</html>
